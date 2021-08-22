@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha calc.test.js",
-    "start": "npx nodemon app.js"
+    "test1": "mocha calc.test.js",
+    "start": "npx nodemon app.js",
+    "test": "mocha app.test.js"
   },
   "keywords": [],
   "author": "",

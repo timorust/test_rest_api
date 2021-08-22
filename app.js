@@ -13,7 +13,14 @@ app.use(express.urlencoded({
   extended: true
 }))
 
+
+// app.get('/add', async(req, res) => {
+//   res.status(200).json(5)
+// })
+
 app.get('/add/', async(req, res) => {
   const result = calc.add(Number(req.query.x), Number(req.query.y))
   res.status(200).json(result);
 })
+
+app.listen(port, () => console.log(`Listening to port ${port}`));
